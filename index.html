@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
+
+<body class="bg">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="form-bg">
+            <div class="d-flex gap-5 p-3">
+                <div>
+                    <p>Form :</p>
+                    <select name="" id="unit1" class="my-1 px-5 py-2 rounded-4 input-bg">
+                        <option value="">Select Number Type</option>
+                        <option value="2">Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">HexaDecimal</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <p>To :</p>
+                   <select name="" id="unit2" class="my-1 px-5 py-2 rounded-4 input-bg">
+                        <option value="">Select Number Type</option>
+                        <option value="2">Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">HexaDecimal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="p-3">
+                <label for="" class="in-type">Enter Number :</label>
+                <input type="text" id="inputnum" class="input-bg my-1 px-5 py-2 rounded-4">
+            </div>
+
+            <div class="p-3 sdfsfs">
+                <label for="" class="in-type">Converted Number :</label>
+                <input type="text" id="Converter" class="input-bg my-1 px-5 py-2 rounded-4">
+            </div>
+
+            <div class="text-center"><button class="btn-color" id="con">Convert</button></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script>
+        let unit1 = document.getElementById("unit1")
+        let unit2 = document.getElementById("unit2")
+        let num = document.getElementById("inputnum")
+
+        $(document).ready(() => {
+            $("#con").on("click", () => {
+                let u1 = parseInt(unit1.value);
+                let u2 = parseInt(unit2.value);
+                let num = parseInt(inputnum.value);
+
+                let DecimalNumber = parseInt(num, 10)
+                let Converter = 0;
+
+                switch (u1) {
+                    case 2: {
+                        DecimalNumber = parseInt(num, 2);
+                        break;
+                    }
+                    case 8: {
+                        DecimalNumber = parseInt(num, 8);
+                        break;
+                    }
+                    case 16: {
+                        DecimalNumber = parseInt(num, 16);
+                        break;
+                    }
+                }
+
+                switch (u2) {
+                    case 2: {
+                        Converter = DecimalNumber.toString(2);
+                        break;
+                    }
+                    case 8: {
+                        Converter = DecimalNumber.toString(8);
+                        break;
+                    }
+                    case 10: {
+                        Converter = DecimalNumber.toString(10);
+                        break;
+                    }
+                    case 16: {
+                        Converter = DecimalNumber.toString(16);
+                        break;
+                    }
+                }
+
+                document.getElementById("Converter").value = Converter;
+            })
+
+
+        })
+
+    </script>
+</body>
+
+</html>
