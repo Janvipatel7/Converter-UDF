@@ -9070,7 +9070,7 @@ fieldset:disabled .btn {
 }
 
 .p-1 {
-    padding: .25rem !important
+    /* padding: .25rem !important */
 }
 
 .p-2 {
@@ -9928,9 +9928,9 @@ fieldset:disabled .btn {
     border-radius: var(--bs-border-radius-lg) !important
 }
 
-.rounded-4 {
+/* .rounded-4 {
     border-radius: var(--bs-border-radius-xl) !important
-}
+} */
 
 .rounded-5 {
     border-radius: var(--bs-border-radius-xxl) !important

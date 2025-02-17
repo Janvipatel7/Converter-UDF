@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
 }
 
 .container{
@@ -10,22 +12,25 @@
 }
 .form-bg{
     background: white;
-    border-radius: 12px;
+    border-radius: 5px !important;
     box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1);
-    padding: 2rem;
-    
+    padding: 30px 30px;  
 }
+
 .bg{
-    background-color: #f3d2b583;
+    background-color: #f3d2b583 ;
+}
+h3{
+    color: #2d6072 !important;  
 }
 p{
  color: #2d6072;
- font-size: 30px;
+ font-size: 16px;
  font-weight: 600;
 }
 .in-type{
 color: #2d6072;
-font-size: 30px;
+font-size: 16px;
 font-weight: 600;
 }
 .input-bg{
@@ -40,16 +45,15 @@ border:none !important;
     background-color: none;
 }
 .btn-color{
-    padding: 10px 40px;
-    background-color: #f5798acd !important;
-    border: 1px solid #f5798acd;
+    background-color: #e2929ccd !important;
+    border: 1px solid #e87b89cd;
     border-radius: 5px;
     color: #134558;
     font-size: 20px;
     font-weight: 600;
 }
 .btn-color:hover{
-    color: #e75a6dcd !important;
-    background-color: white !important;
-    border: 2px solid #134558;
+    color: white !important;
+    background-color: #2d6072 !important;
+    border: 2px solid white !important;
 }
